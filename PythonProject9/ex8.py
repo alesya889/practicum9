@@ -1,5 +1,5 @@
-with (open('input.txt', 'r', encoding='utf-8') as f, \
-        open('output.txt', 'w', encoding='utf-8') as f2):
+with (open('input8.txt', 'r', encoding='utf-8') as f, \
+        open('output8.txt', 'w', encoding='utf-8') as f2):
     lines = f.readlines()
     month = (lines[0:31], lines[31:59],
              lines[59:90], lines[90:120],
@@ -15,5 +15,6 @@ with (open('input.txt', 'r', encoding='utf-8') as f, \
             whsteps = whsteps + int(d[:-1])
         medres = whsteps / len(m)
         f2.write(str(medres) + '\n')
+
 
 
